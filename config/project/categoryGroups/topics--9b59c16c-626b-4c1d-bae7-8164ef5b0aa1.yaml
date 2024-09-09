@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  bedf405b-ce2a-4ea3-9f8c-ebaf84655c89:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-22T13:17:10+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 545c22aa-8774-4a9e-9c27-044c29ebcb8d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: df75ea04-9d74-41e4-a2e6-c1e5ebe02451
+        userCondition: null
+handle: topics
+name: Topics
+siteSettings:
+  ecf43ff5-d5de-44a0-9c21-81afbe1b726c: # cms test aug
+    hasUrls: true
+    template: blog/_topic.twig
+    uriFormat: 'blog/topic/{slug}'
+structure:
+  maxLevels: 1
+  uid: da6e6159-33a0-45cf-abeb-5113d0b7c4ec

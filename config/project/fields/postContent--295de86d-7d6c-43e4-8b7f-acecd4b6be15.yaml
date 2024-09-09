@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: postContent
+instructions: null
+name: 'Post Content'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 85c968e6-c85a-4ea7-bf76-7d42f15de2d3 # contentPost
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,70 @@
+{# You can omit the `.twig` when referencing another template: #}
+{% extends '_layout' %}
+
+{# Load the attached image: #}
+{% set featureImage = entry.featureImage.one() %}
+
+{# Load attached topics: #}
+{% set topics = entry.postCategories.all() %}
+
+{# Load content blocks: #}
+{% set postContent = entry.postContent.all() %}
+
+
+{# Provide something to the `content` block in `_layout.twig`: #}
+{% block content %}
+
+	{# Access a property of a variable using “dot” notation: #}
+	<h1>{{ entry.title }}</h1>
+
+	<time datetime="{{ entry.postDate | atom }}">
+		{{ entry.postDate | date }}
+	</time>
+
+	{% if topics | length %}
+		<ul class="topics">
+			{% for topic in topics %}
+				<li>{{ topic.getLink() }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+	{# Output the image, if one was found: #}
+	{% if featureImage %}
+		<div class="feature-image">
+			{{ featureImage.getImg() }}
+		</div>
+	{% endif %}
+
+	{% set nestedEntries = entry.postContent %}
+	<div class="post-content">
+		{% for nestedEntry in entry.postContent.all() %}
+			{# Grab the entry type’s handle for comparison: #}
+			{% set imagePost = nestedEntry.image.one() %}
+
+{{ nestedEntry.type}}
+			{% if nestedEntry.text|length %}
+				<div class="content-block text">
+					{{ nestedEntry.text | md}}
+				</div>
+			{% endif %}
+
+			{% if imagePost %}
+				<div class="content-block image">
+					{{ imagePost.getImg }}
+				</div>
+			{% endif %}
+
+			{% if nestedEntry.quote|length %}
+				<div class="content-block quote">
+					<blockquote>{{ nestedEntry.quote | md }}</blockquote>
+				</div>
+
+			{% endif %}
+
+
+		{% endfor %}
+
+
+	</div>
+{% endblock %}

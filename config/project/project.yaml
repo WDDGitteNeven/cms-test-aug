@@ -1,0 +1,50 @@
+dateModified: 1724924423
+email:
+  fromEmail: gitte.neven@hotmail.com
+  fromName: 'cms test aug'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
+meta:
+  __names__:
+    7ef1eb88-017c-4129-b0dd-eac0053a62a2: Image # Image
+    9b59c16c-626b-4c1d-bae7-8164ef5b0aa1: Topics # Topics
+    25e4f6d1-8f1e-43f8-9c18-43beccec23ac: 'Post Categories' # Post Categories
+    034c94c7-7449-4ec5-9d4a-ef4bb85d1760: Text # Text
+    47a430c5-4526-4e31-a721-b14568e8ad70: 'Profile Photo' # Profile Photo
+    85c968e6-c85a-4ea7-bf76-7d42f15de2d3: contentPost # contentPost
+    295de86d-7d6c-43e4-8b7f-acecd4b6be15: 'Post Content' # Post Content
+    394c0a79-d7c3-4254-a5a5-fe0cfa255cb1: Quote # Quote
+    646b911b-625b-48ec-b10d-72d86733c600: About # About
+    834ec624-ea3a-445f-8e6e-bc5c217ff2ab: Default # Default
+    7493a22d-c58a-4e7e-a927-5549de385115: Summary # Summary
+    18324bdc-c749-4834-afe9-953a032c4782: 'Feature Image' # Feature Image
+    497758c3-9536-48e8-8733-204b872cc80c: Images # Images
+    79016788-c0f8-4921-a3ab-18b3281e476f: 'Site Info' # Site Info
+    c9a73930-f21c-4d62-9fb9-e45b1930ddbd: Blog # Blog
+    c7145ecd-130f-4465-b0a3-bb3da4fdf0ad: Bio # Bio
+    c592686e-08db-4842-a67b-85a43751b402: 'Public Schema' # Public Schema
+    cc6197f2-14c9-4e57-9751-95f0f83fd969: 'cms test aug' # cms test aug
+    e3d39713-9ffa-4e92-8243-4ae17ce3987b: About # About
+    ecf43ff5-d5de-44a0-9c21-81afbe1b726c: 'cms test aug' # cms test aug
+    edc1bfe8-f825-4996-8b0d-efe392379f8e: Post # Post
+    f34e1de1-7b45-4614-8406-091721a862a0: Description # Description
+system:
+  edition: team
+  live: true
+  name: 'cms test aug'
+  schemaVersion: 5.3.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

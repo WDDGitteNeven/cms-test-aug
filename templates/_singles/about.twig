@@ -1,0 +1,19 @@
+{% extends '_layout' %}
+
+{% set profilePhoto = entry.profilePhoto.one() %}
+
+{% block content %}
+  <h1>{{ entry.title }}</h1>
+
+  <div class="about">
+    {% if profilePhoto %}
+      <div class="photo">
+        {{ profilePhoto.getImg() }}
+      </div>
+    {% endif %}
+
+    <div class="bio">
+      {{ entry.bio | md }}
+    </div>
+  </div>
+{% endblock %}
